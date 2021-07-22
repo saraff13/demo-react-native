@@ -78,7 +78,7 @@ class Calendar extends Component {
     return (
       <TouchableOpacity
         onPress={() => {
-          this.setState({x: !x});
+          this.setState({x: !this.state.x});
           this.setState({selectedId: item.index});
         }}
         style={[styles.dateWrap, {backgroundColor: bgColor}]}>
