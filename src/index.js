@@ -7,13 +7,14 @@ import {Provider} from 'react-redux';
 // import Task from './scenes/Task';
 // import Calendar from './scenes/Calendar';
 import Auth from './navigations/AuthNavigator';
+import Pagination from './scenes/Pagination';
 import store from './store';
 
 export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Auth />
+        <Pagination />
       </Provider>
     );
   }
